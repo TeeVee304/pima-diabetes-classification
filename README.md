@@ -28,7 +28,7 @@ The Pima Indians Diabetes dataset was compiled by the US National Institute of D
 | Diabetes pedigree function | 0.078 – 2.42 |
 | Age (years) | 21 – 81 |
 
-The data ships with the repository as a Python pickle (`src/pimaDiabetes.p`) holding `data`, `target` and `feature_names`.
+The data ships with the repository as a Python pickle (`data/pimaDiabetes.p`) holding `data`, `target` and `feature_names`.
 
 ## Approach
 
@@ -67,13 +67,15 @@ All models share the same defect: specificity is far below recall, *i.e.* diabet
 
 ```
 .
-├── doc/
-│   └── pimaDiabetesEnunciado_25-26.pdf   # assignment brief (PT)
+├── A48630A51038A51811TP1.ipynb           # main notebook 
+├── data/
+│   └── pimaDiabetes.p                    # dataset (pickle)
+├── docs/
+│   └── pimaDiabetesEnunciado_25-26.pdf   # assignment brief 
+├── drafts/
+│   └── A48630A51038A51811TP1.ipynb       # exploratory scratch notebook
 ├── src/
-│   ├── A48630A51038A51811TP1.ipynb       # main notebook: analysis, training, evaluation
-│   ├── drafts.ipynb                      # exploratory scratch notebook
-│   ├── pimaDiabetes.p                    # dataset (pickle)
-│   └── tools.py                          # helper library: metrics, ROC, grid search, k-fold
+│   └── tools.py                          # helper library
 ├── requirements.txt
 └── README.md
 ```
